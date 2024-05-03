@@ -1,0 +1,401 @@
+
+#hero h1 {
+  position: absolute;
+  right: 2em;
+  top: 3.5em;
+  z-index: 990;
+  color: #FFFCE0;
+  font-family: "Josefin Sans", Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.15em;
+  text-shadow: 0em 0em 1em black;
+  font-size: 2.25em;
+}
+#hero h1 b{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#hero h1 .span-1{
+  font-size: 0.9em;
+  margin-right: 0.5em;
+  font-weight: normal;
+}
+#hero h1 .span-2{
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+#hero {
+  border-top: 10.5em solid;
+  position: relative;
+  border-bottom: 1em solid #fffce0;
+}
+#hero-slider {
+  position: relative;
+  height: 34em;
+  background: black;
+  display: block;
+  margin: 0em auto 0em auto;
+  width: 100%;
+}
+.hero-slide {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: 1s;
+  background-position: center;
+  overflow: hidden;
+  display: block;
+  transform: translateX(-50%);
+}
+.hero-slide.active {
+  opacity: 0.9;
+}
+.hero-slide img {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.8;
+}
+#slider-nav {
+  width: 100%;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  max-width: 20em;
+}
+.slider-button {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.25em;
+  width: 1.25em;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0.25em;
+  opacity: 0.25;
+  transition: 0.3s;
+  border: 0;
+  cursor: pointer;
+}
+.slider-button.active,
+.slider-button:hover {
+  opacity: 1;
+}
+#scroll-nav {
+  width: 95%;
+  max-width: 60em;
+  margin: 2em auto;
+  display: block;
+  border: 1px solid black;
+  position: relative;
+  height: 18em;
+  overflow: hidden;
+}
+#slider-left,
+#slider-right {
+  border: 0;
+  cursor: pointer;
+  z-index: 998;
+  background: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+#slider-left .material-symbols-outlined,
+#slider-right .material-symbols-outlined {
+  color: white;
+  font-size: 3.5em;
+  line-height: 1.5em;
+}
+#slider-left:hover,
+#slider-right:hover {
+  opacity: 1;
+}
+#slider-left {
+  color: white;
+}
+#slider-right {
+  color: white;
+}
+#hero-cta {
+  position: absolute;
+  bottom: 3em;
+  z-index: 990;
+  left: 3em;
+}
+#hero-cta span {
+  color: white;
+  font-size: 2.25em;
+  line-height: 1em; 
+  font-weight: bold;
+  text-shadow: 0em 0em 1em black;
+  margin-bottom: 0.25em;
+  display: inline-block;
+}
+#hero-cta a {
+  background-color: #FFC700;
+  padding: 0.5em 1.25em;
+  border-radius: 2em;
+  display: inline-block;
+  color: #395F0A;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 1.75em;
+}
+@media(max-width:900px){
+  .hero-slide img {
+    height: 100%;
+    width: auto;
+  }
+  #hero h1 {
+    right: 1em;
+    font-size: 2em;
+  }
+}
+@media (max-width: 750px) {
+  #hero-slider{
+    height: 30em;
+  }
+   #hero-cta {
+    position: relative;
+     bottom: auto;
+     left: auto;
+     text-align: center;
+     padding: 2em;
+    background: rgba(57, 95, 10, 1);
+  }
+  #hero-cta span{
+    text-shadow: 0em 0em 0em transparent;
+  }
+  #slider-nav{
+    bottom: 12em;
+  }
+}
+
+@media (max-width: 600px) {
+  #hero h1 {
+    right: 0.5em;
+    top: 2em;
+    font-size: 1.75em;
+  }
+}
+
+@media (max-width: 450px) {
+  #hero h1 {
+    font-size: 1.5em;
+  }
+}
+@media(max-width:350px){
+  #logo{
+    width: 75%;
+  }
+}
+
+#reading{
+  background-image: url("../images/kauai-tubing-background.jpg");
+  padding: 4em 0em;
+  background-size: cover;
+  background-position: center;
+}
+#reading section{
+  width: 90%;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  display: table;
+  max-width: 950px;
+  margin: 0 auto;
+  box-shadow: 0em 0.5em 0.75em rgba(0,0,0,0.33);
+}
+#video-home-container{
+  display: table-cell;
+  width: 50%;
+  position: relative;
+  vertical-align: top;
+  text-align: center;
+}
+#video-home-container span{
+  font-family: "rock salt";
+  font-size: 2em;
+  font-weight: 100;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0.5em;
+  display: block;
+  width: 10em;
+  color: #145586;
+  left: 1em;
+  transform: rotate(-8deg);
+}
+#video-home-container iframe{
+
+  position: absolute;
+  width: 100%;
+  height: 16em;
+  border: 0.5em solid whitesmoke;
+  left: -2em;
+  top: 8em;
+  box-shadow: 0em 0.5em 0.75em rgba(0,0,0,0.33);
+}
+
+#reading section article{
+  display: table-cell;
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
+  padding: 4em 4em 4em 0em;
+}
+#reading section article h2{
+  color: #395f0a;
+}
+#reading section article p{
+  line-height: 2em;
+  color: #333;
+}
+#reading section article a{
+  float: right;
+  text-transform: capitalize;
+  color: #395f0a;
+  border: 0.15em solid;
+  padding: 1em 1em 1em 1em;
+  border-radius: 2em;
+  line-height: 0em;
+  font-size: 1.15em;
+}
+
+@media(max-width:750px){
+  #video-home-container span{
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    transform: none;
+    padding: 0.5em;
+  }
+  #video-home-container,
+  #reading section article{
+   display: block;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+  }
+   #video-home-container iframe{
+    position: relative;
+    left: auto;
+    top: auto;
+     max-width: 30em;
+     width: 100%;
+  }
+  #reading section article p{
+    text-align: center;
+  }
+  #reading section article a{
+    float: none;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+#home-gallery {
+  text-align: center;
+  padding: 2em;
+  width: 100%;
+  background: rgba(20, 85, 134, 1);
+  border-top: 1em solid wheat;
+}
+.gallery-img {
+  display: inline-block;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  height: 16em;
+  margin: 0.5em;
+  text-align: center;
+  border: 0.5em solid wheat;
+  background: #333;
+  box-shadow: 0em 0.5em 0.75em rgba(0,0,0,0.33);
+}
+.gallery-img .thumbnail {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+@media(max-width:750px){
+  .gallery-img{
+    width: 40%;
+  }
+}
+@media(max-width:450px){
+  .gallery-img{
+    width: 100%;
+    max-width: 20em;
+  }
+}
+#reading-continued{
+  width: 100%;
+  position: relative;
+  background-image: url("../images/kauai-tubing-background-orange.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 2em;
+  overflow: hidden;
+  padding: 8em 0em;
+  border-top: 1em solid wheat;
+}
+#reading-continued .decor-left,
+#reading-continued .decor-right{
+  position: absolute;
+  top: -5em;
+  width: 15em;
+}
+#reading-continued .decor-left{
+  left: -5em;
+  transform: rotate(-148deg) scaleX(-1);
+}
+#reading-continued .decor-right{
+  right: -5em;
+  transform: rotate(148deg);
+}
+#reading-continued article {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+#reading-continued h2{
+  margin-bottom: 1em;
+  color: #145586;
+  text-transform: capitalize;
+}
+#reading-continued p{
+  line-height: 1.5em;
+  text-align: justify;
+  color: #333;
+}
+#reading-continued a{
+  font-size: 1.5em;
+  color: #145586;
+  margin-top: 1em;
+  font-weight: bold;
+}
+@media(max-width:450px){
+  #reading-continued .decor-left,
+  #reading-continued .decor-right{
+    width: 14em;
+    top: -6em;
+  }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/home.css" rel="stylesheet" />
+
+  <script src="js/toggle.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <title>Kauai Tubing</title>
+</head>
+
+<body>
+  <main>
+    <header id="header">
+      <div id="header-top">
+        <ul>
+          <li id="phone">
+            <a href="tel:+18664829775" class="phone"><span class="material-symbols-outlined">call</span>
+              1-866-482-9775
+              <span class="text-small">(toll free)</span>
+            </a>
+          </li>
+          <li id="book-now-main">
+            <a href="/reservations.htm"><span class="material-symbols-outlined">calendar_month</span>book now</a>
+          </li>
+        </ul>
+      </div>
+      <ul id="header-main">
+        <li id="logo">
+          <a href=""><b>kauai tubing</b><br><span>discount tubing adventures</span></a>
+        </li>
+        <li id="main-nav">
+          <nav>
+            <a href="/reservations.htm">Reservations</a>
+            <a href="about.htm">About</a>
+            <a href="blog.htm">Blog</a>
+            <a href="faq.htm">FAQ</a>
+            <a href="contact.htm">Contact</a>
+            <a href="cart/edit" class="cart-link"><span class="material-symbols-outlined">shopping_cart</span>Cart</a>
+          </nav>
+        </li>
+        <button type="button" name="button" class="menu-btn"
+          onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+          <hr class="menu-btn-hr-1" />
+          <hr class="menu-btn-hr-2" />
+          <hr class="menu-btn-hr-3" />
+        </button>
+      </ul>
+    </header>
+    <!-- =================================================== -->
+    <div id="hero">
+
+      <h1>
+        <b>discount</b><br>
+        <span class="span-1">kauai</span><b>tubing</b><br>
+        <span class="span-2">reservations</span><br>
+        <br>
+        <span class="span-1">with</span><b>"kauai</b><br>
+        <b>backcountry"</b>
+      </h1>
+
+      <div id="hero-slider">
+        <a href="reservations.htm" data-img="images/gallery/hero-bg1.jpg" class="hero-slide active" id="slide-1"></a>
+        <a href="reservations.htm" data-img="images/gallery/hero-bg2.jpg" class="hero-slide" id="slide-2"></a>
+        <a href="reservations.htm" data-img="images/gallery/hero-bg3.jpg" class="hero-slide" id="slide-3"></a>
+      </div>
+
+      <div id="slider-nav">
+        <button type="button" id="slider-left" onclick="plusSlides(-1);clearInterval(carousel);">
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <button type="button" class="slider-button" onclick="currentSlide(0);clearInterval(carousel);"></button>
+        <button type="button" class="slider-button" onclick="currentSlide(1);clearInterval(carousel);"></button>
+        <button type="button" class="slider-button" onclick="currentSlide(2);clearInterval(carousel);"></button>
+        <button type="button" id="slider-right" onclick="plusSlides(1);clearInterval(carousel);">
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+      </div>
+
+      <div id="hero-cta">
+        <span>Best Price <br> Guaranteed</span>
+        <br>
+        <a href="/luaus.htm">reservations</a>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    
+    <div id="reading">
+      <section>
+        <div id="video-home-container">
+          <span>make a splash</span>
+          <iframe src="https://www.youtube.com/embed/S2wVe0xO4IY?si=weeotki2S8Fgv_rP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <article>
+          <h2>kauai mountain tubing adventure</h2>
+          <p>Looking for a fun thing to do on Kauai other than the beach? This Kauai  mountain tubing adventure is the only one of its kind on the island and  fun for everyone in the family age 5 and over. Hop on a tube and float  down gently flowing open canals located in the island's emerald green  interior.</p>
+          <a href="/about.htm">learn more</a>
+        </article>
+      </section>
+    </div>
+
+    <!-- ======================================================== -->
+
+    <div id="home-gallery">
+      <a href="images/gallery/kauai-tubing-gallery-1.png" class="gallery-img" target="_blank"><img src="images/gallery/thumbnails/kauai-tubing-gallery-thumbnail-1.jpg" class="thumbnail" alt=""></a>
+      <a href="images/gallery/kauai-tubing-gallery-2.png" class="gallery-img" target="_blank"><img src="images/gallery/thumbnails/kauai-tubing-gallery-thumbnail-2.jpg" class="thumbnail" alt=""></a>
+      <a href="images/gallery/kauai-tubing-gallery-3.png" class="gallery-img" target="_blank"><img src="images/gallery/thumbnails/kauai-tubing-gallery-thumbnail-3.jpg" class="thumbnail" alt=""></a>
+      <a href="images/gallery/kauai-tubing-gallery-4.png" class="gallery-img" target="_blank"><img src="images/gallery/thumbnails/kauai-tubing-gallery-thumbnail-4.jpg" class="thumbnail" alt=""></a>
+      <a href="images/gallery/kauai-tubing-gallery-5.png" class="gallery-img" target="_blank"><img src="images/gallery/thumbnails/kauai-tubing-gallery-thumbnail-5.jpg" class="thumbnail" alt=""></a>
+      <a href="images/gallery/kauai-tubing-gallery-6.png" class="gallery-img" target="_blank"><img src="images/gallery/thumbnails/kauai-tubing-gallery-thumbnail-6.jpg" class="thumbnail" alt=""></a>
+    </div>
+
+    <!-- ======================================================== -->
+
+    <div id="reading-continued">
+      <img src="images/fern.png" alt="" class="decor-left">
+      <img src="images/fern.png" alt="" class="decor-right">
+      <article>
+        <h2>another h2, add content here</h2>
+        <p>Kauai-Tubing.com offers the Kauai Mountain Tubing Adventure at a discounted rate. Make your reservation early as this is one of the most popular activities on Kauai. For more information or to order your tickets over the phone call:</p>
+        <a href="tel:+18664829775" class="phone"><span class="material-symbols-outlined">call</span>(toll free)1-866-482-9775</a>  
+      </article>
+    </div>
+    
+    <!-- ======================================================= -->
+    <div id="why-book-with">
+      <h2>why book with us?</h2>
+      <ul>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:0;top:0;">
+            </div>
+            <header>Secure Shopping</header>
+            <p>Safe, secure online booking system with validated privacy protection.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-11em;top:0;">
+            </div>
+            <header>Advance Booking<br />Satisfaction</header>
+            <p>Avoid sellouts and price increases. Relax knowing your luau tickets are reserved and guaranteed.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-16.5em;top:0;">
+            </div>
+            <header>Friendly Support</header>
+            <p>Our staff will answer any questions you may have and ensure 100% satisfaction.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- ================================== -->
+
+    <footer class="footer">
+
+        <a href="#" id="logo-footer">
+          <b>kauai tubing</b><br><span>discount tubing adventures</span>
+        </a>
+
+      <div class="social">
+        <p>follow us</p>
+          <ul>
+            <li><a href=""><img src="images/youtube.svg" alt=""></a></li>
+            <li><a href=""><img src="images/facebook.svg" alt=""></a></li>
+            <li><a href=""><img src="images/instagram.svg" alt=""></a></li>
+            <li><a href=""><img src="images/twitter.svg" alt=""></a></li>
+          </ul>
+      </div>
+      <section>
+        <ul>
+          <li><b>navigation</b></li>
+          <li> <a href="reservations.htm">reservations</a></li> 
+          <li> <a href="#">home</a> </li>
+          <li> <a href="#">contact</a> </li>
+          <li> <a href="#">about us</a> </li>
+          <li> <a href="#">cart</a> </li>
+        </ul>
+        <ul>
+          <li><b>site info</b></li>
+          <li> <a href="#">faq</a> </li>
+          <li> <a href="#">site map</a> </li>
+          <li> <a href="#">privacy policy</a> </li>
+          <li> <a href="#">terms</a> </li>
+          <li> <a href="#">login</a> </li>
+        </ul>
+      </section>
+      <p>Copyright (c) 2024 hawaii discount All Rights Reserved.</p>
+    </footer>
+
+  </main>
+
+  <script src="js/home.js"></script>
+  <!-- =================================== -->
+
+</body>
+
+</html>
