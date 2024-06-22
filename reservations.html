@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/home.css" rel="stylesheet" />
+
+  <script src="js/toggle.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <title>Kauai Tubing</title>
+
+</head>
+
+<body>
+  <main>
+    <header id="header">
+      <div id="header-top">
+        <ul>
+          <li id="phone">
+            <a href="tel:+18664829775" class="phone"><span class="material-symbols-outlined">call</span>
+              1-866-482-9775
+              <span class="text-small">(toll free)</span>
+            </a>
+          </li>
+          <li id="book-now-main">
+            <a href="/reservations.htm"><span class="material-symbols-outlined">calendar_month</span>book now</a>
+          </li>
+        </ul>
+      </div>
+      <ul id="header-main">
+        <li id="logo">
+          <a href=""><b>kauai tubing</b><br><span>discount tubing adventures</span></a>
+        </li>
+        <li id="main-nav">
+          <nav>
+            <a href="/reservations.htm">Reservations</a>
+            <a href="about.htm">About</a>
+            <a href="blog.htm">Blog</a>
+            <a href="faq.htm">FAQ</a>
+            <a href="contact.htm">Contact</a>
+            <a href="cart/edit" class="cart-link"><span class="material-symbols-outlined">shopping_cart</span>Cart</a>
+          </nav>
+        </li>
+        <button type="button" name="button" class="menu-btn"
+          onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+          <hr class="menu-btn-hr-1" />
+          <hr class="menu-btn-hr-2" />
+          <hr class="menu-btn-hr-3" />
+        </button>
+      </ul>
+    </header>
+    <!-- =================================================== -->
+    <link rel="stylesheet" href="css/reservations.css">
+    <div id="activity-header">
+      <img src="images/kauai-tubing-adventure.png" alt="kauai fun tubing">
+    </div>
+
+    <div id="product-content">
+      <div id="product-main">
+        <h1 id="product-header">Kauai Tubing with Backcountry Adventures</h1>
+        <h2 id="product-subtitle">Mountain Tubing Adventure</h2>
+        <ul id="product-features">
+          <li><span class="material-symbols-outlined">check_circle</span><span>Tubing</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>Swimming</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>Sightseeing</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>History</span></li>
+          <li><span class="material-symbols-outlined">check_circle</span><span>Lunch</span></li>
+        </ul>
+        <p class="product-duration"><span class="material-symbols-outlined">schedule</span><span>Duration: Approximately
+            3 hours</span></p>
+        <ul id="product-prices">
+          <li id="before-price">was<span> $163</span> </li>
+          <li id="after-price">now<span>$145</span> </li>
+        </ul>
+        <div id="product-buttons">
+          <button type="button" id="product-button">
+            <p>book now</p>
+            <Span Class="material-symbols-outlined">chevron_right</Span>
+          </button>
+
+        </div>
+      </div>
+      <div id="player-wrapper">
+        <iframe src="https://www.youtube.com/embed/S2wVe0xO4IY?rel=0&showinfo=0&fc=0"></iframe>
+      </div>
+    </div>
+
+    <button id="book-now-alt" class="hidden">book now<span
+        class="material-symbols-outlined">calendar_month</span></button>
+
+    <div class="activity-details">
+      <div class="activity-article">
+        <p>This is a fun tubing adventure unique in all of Hawaii. Equipped with an inner tube and a head lamp, you’ll
+          float down a historic irrigation ditch and through several amazing tunnels and flumes engineered and hand dug
+          around 1870. Along the way, enjoy great views of Kauai’s lush rainforest, mountains and valleys. After your
+          Kauai tubing adventure, your tour guide will lead you to a beautiful picnic area nearby for a delicious lunch.
+          Then enjoy a refreshing swim in a natural swimming hole.</p>
+
+        <p>As you float down the tropical waterway, you'll be able to see an amazing engineering feat up close. This
+          historic irrigation ditch and the several amazing tunnels and flumes were hand dug around 1870! Enjoy the
+          wonder and magic of each tunnel, lit by headlamps. The open canals run through some of Kauai's most beautiful
+          and remote land and feature fantastic views of the mountains and Waialeale Crater.</p>
+
+        <p>At the end of your tubing adventure, your tour guide will lead you to a beautiful picnic spot nearby for a
+          delicious lunch and a refreshing dip in a natural swimming pool.</p>
+      </div>
+    </div>
+
+    <ul id="activity-gallery">
+      <li>
+        <a href="/Content/Files/fun-kauai-tubing-adventure.jpg" Class="gallery-image" target="_blank"
+          data-alt="fun tubing adventure"></a>
+        <p class="img-description"></p>
+      </li>
+      <li>
+        <a href="/Content/Files/cave-tubing-kauai.jpg" Class="gallery-image" target="_blank"
+          data-alt="cave tubing adventure"></a>
+        <p class="img-description"></p>
+      </li>
+      <li>
+        <a href="/Content/Files/tubing-view-from-tunnel.jpg" Class="gallery-image" target="_blank"
+          data-alt="tubing view from tunnel"></a>
+        <p class="img-description"></p>
+      </li>
+      <li>
+        <a href="/Content/Files/kauai-nature-tubing.jpg" Class="gallery-image" target="_blank"
+          data-alt="nature tubing in kauai"></a>
+        <p class="img-description"></p>
+      </li>
+    </ul>
+
+    </div>
+
+    <div class="activity-details">
+      <div class="activity-article">
+        <h3>Tour Times:</h3>
+        <p>Availability of specific times changes quickly. Your confirmation will have your exact tour start time
+          listed. To ensure we can get you booked for this popular activity you have the following timing options to
+          choose from:</p>
+        <ul>
+          <li>Any Available Time - we will book you for the first available time that fits your party</li>
+          <li>Morning - we will book you for any available tour time that starts between 7:00 am and 9:30 am.</li>
+          <li>Mid-Day - we will book you for any available tour time that starts between 10:00 am and 1:00 pm.</li>
+          <li>Afternoon - we will book you for any available tour time that starts between 1:30 pm and 4:00 pm.</li>
+        </ul>
+        <p>If a time within your selection is not available, we will contact you about the available times. <b>if you
+            need a specific time</b>, please call or email to speak with an agent about availability.</p>
+      </div>
+      <div class="activity-article">
+        <h3>Tubing Tour Highlights:</h3>
+        <ul>
+          <li>Fun tubing adventure with great views of Kauai’s rain-forest, mountains, valleys and the ocean</li>
+          <li>Float down historic irrigation ditch and through several tunnels</li>
+          <li>Swim in a natural swimming hole</li>
+          <li>Learn about a part of Kauai’s history</li>
+          <li>Only tubing activity of this type on Kauai</li>
+        </ul>
+        <h3>Tour Inclusions:</h3>
+        <ul>
+          <li>Tube</li>
+          <li>Headlamp</li>
+          <li>Gloves</li>
+          <li>Hand sanitizer</li>
+          <li>Snacks and cold water</li>
+          <li>Water-friendly shoes available for rental</li>
+          <li>Wet-suit tops available for rental</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="activity-aside">
+      <article>
+        <h3>special instructions</h3>
+        <ul>
+
+          <li>
+            <b>Where and When:</b>
+            <p>Check in 30 minutes prior to your requested tour time at the Kauai Backcountry Adventures office, located
+              at
+              3-4131 Kuhio Highway, Lihue, HI 96766. View Map
+              Look for the wooden fence and a sign that says "Kauai Backcountry Adventures."</p>
+          </li>
+
+          <li>
+            <b>Restrictions:</b>
+            <p>Participants must be 5 years and older AND 43" (110 cm) or taller.
+              Weight limit is 300 pounds (136 kg)
+              Children 15 years and under must be accompanied by an adult 18 years and older. Those 16-17 years old may
+              attend the tour without an adult, however, a parent must come in to check in the minor and sign a waiver.
+              Not recommended for anyone claustrophobic or those with back, hip or knee problems.
+              Women up to the second trimester of pregnancy may participate with written physician approval.</p>
+          </li>
+
+          <li>
+            <b>Special Notes:</b>
+            <p>You can rent a wetsuit for $10 or buy one for $30.
+              Unless extreme weather prohibits, tours go out rain or shine.</p>
+          </li>
+
+          <li>
+            <b>Operation Days:</b>
+            <p>Daily</p>
+          </li>
+
+          <li>
+            <b>Duration:</b>
+            <p>Approximately 3 hours</p>
+          </li>
+
+          <li>
+            <b>Vendor:</b>
+            <p>Kauai Backcountry Adventures</p>
+          </li>
+
+          <li>
+            <b>Island:</b>
+            <p>Kauai</p>
+          </li>
+
+          <li>
+            <b>Capacity:</b>
+            <p>20</p>
+          </li>
+
+          <li>
+            <b>Equipment:</b>
+            <p>Tube, gloves and headlights provided.</p>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <script>
+      const emailName = '';
+      const emailPhone = '';
+    </script>
+
+    <script>
+      let cartData = { "ProductID": 22, "ProductKey": "127", "ProductTitle": "Kauai Backcountry Adventures - Mountain Tubing Adventure", "ProductOrderKey": "127", "Prices": [{ "ID": 84, "ControlName": "price_127_84", "Key": "2325", "Description": "Per Person (5 yrs+)", "Limit": 1, "Quantity": 0, "ListPrice": 163.35, "Saleprice": 145.00, "DisplayOrder": 1, "Active": true, "Exempt": false, "Hidden": false, "Category": "Adult", "Grouping": null, "Availability": { "CollectorName": "Activity Date", "ReferenceControl": "ActivityDate_127", "ClosedDates": "[\"\"]", "Cutoff": "" } }], "Availabilities": [{ "CollectorName": "Activity Date", "ReferenceControl": "ActivityDate_127", "ClosedDates": "[\"06/21/2024\",\"06/01/2024\",\"06/02/2024\",\"06/03/2024\",\"06/04/2024\",\"06/05/2024\",\"06/06/2024\",\"06/07/2024\",\"06/08/2024\",\"06/09/2024\",\"06/10/2024\",\"06/11/2024\",\"06/12/2024\",\"06/13/2024\",\"06/14/2024\",\"06/15/2024\",\"06/16/2024\",\"06/17/2024\",\"06/18/2024\",\"06/19/2024\",\"06/20/2024\",\"06/21/2024\",\"06/22/2024\",\"06/23/2024\",\"06/24/2024\",\"06/25/2024\",\"06/26/2024\",\"06/27/2024\",\"06/28/2024\",\"06/29/2024\",\"06/30/2024\",\"07/01/2024\",\"07/02/2024\",\"07/03/2024\",\"07/04/2024\",\"07/05/2024\",\"07/06/2024\",\"07/07/2024\",\"07/08/2024\",\"07/09/2024\",\"07/10/2024\",\"07/11/2024\",\"07/12/2024\"]", "Cutoff": "" }], "Collectors": [{ "ID": 0, "ControlName": "ActivityDate_127", "ApplicationDataType": 2, "ListMember": null, "Name": "Activity Date", "DisplayOrder": 0, "DisplayAlias": null, "Value": null, "Required": false }, { "ID": 0, "ControlName": "ParticipantNamesandAges_127", "ApplicationDataType": 0, "ListMember": null, "Name": "Participant Names and Ages", "DisplayOrder": 0, "DisplayAlias": null, "Value": null, "Required": false }, { "ID": 0, "ControlName": "SelectYourKauaiHotel_127", "ApplicationDataType": 7, "ListMember": { "ID": 5, "ControlName": null, "Shortcode": "Select Your Kauai Hotel", "Code": "Select Your Kauai Hotel", "Selected": false, "Value": "", "ListMembers": [{ "ID": 101, "ControlName": null, "Shortcode": "-- Select --", "Code": "-- Select --", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 102, "ControlName": null, "Shortcode": "Alii Kai Princeville", "Code": "Alii Kai Princeville", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 103, "ControlName": null, "Shortcode": "Aloha Beach Resort", "Code": "Aloha Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 104, "ControlName": null, "Shortcode": "Aloha Condos", "Code": "Aloha Condos", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 105, "ControlName": null, "Shortcode": "Aloha Country Inn", "Code": "Aloha Country Inn", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 106, "ControlName": null, "Shortcode": "Aston Islander On The Beach", "Code": "Aston Islander On The Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 107, "ControlName": null, "Shortcode": "Aston Poipu Kai", "Code": "Aston Poipu Kai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 108, "ControlName": null, "Shortcode": "Bali Hai (Kauai)", "Code": "Bali Hai (Kauai)", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 109, "ControlName": null, "Shortcode": "Banyan Harbor Resort", "Code": "Banyan Harbor Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 110, "ControlName": null, "Shortcode": "Cliffs At Princeville", "Code": "Cliffs At Princeville", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 111, "ControlName": null, "Shortcode": "Coral Reef Hotel Kauai", "Code": "Coral Reef Hotel Kauai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 112, "ControlName": null, "Shortcode": "Courtyard By Marriott (Kauai)", "Code": "Courtyard By Marriott (Kauai)", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 113, "ControlName": null, "Shortcode": "Cruise Ship", "Code": "Cruise Ship", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 114, "ControlName": null, "Shortcode": "Embassy Vacation Resort Poipu", "Code": "Embassy Vacation Resort Poipu", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 115, "ControlName": null, "Shortcode": "Garden Island Inn", "Code": "Garden Island Inn", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 116, "ControlName": null, "Shortcode": "Garden Island Rentals", "Code": "Garden Island Rentals", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 117, "ControlName": null, "Shortcode": "Grand Hyatt Resort", "Code": "Grand Hyatt Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 118, "ControlName": null, "Shortcode": "Hanalei Bay Resort", "Code": "Hanalei Bay Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 119, "ControlName": null, "Shortcode": "Hilton Garden Inn Kauai Wailua Bay", "Code": "Hilton Garden Inn Kauai Wailua Bay", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 120, "ControlName": null, "Shortcode": "Hilton Kauai Beach Resort", "Code": "Hilton Kauai Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 121, "ControlName": null, "Shortcode": "Hotel Coral Reef", "Code": "Hotel Coral Reef", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 122, "ControlName": null, "Shortcode": "Hyatt Regency Kauai", "Code": "Hyatt Regency Kauai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 123, "ControlName": null, "Shortcode": "Kapaa Sands Resort", "Code": "Kapaa Sands Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 124, "ControlName": null, "Shortcode": "Kapaa Shores Resort", "Code": "Kapaa Shores Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 125, "ControlName": null, "Shortcode": "Kauai Beach Resort (Ocean Escape)", "Code": "Kauai Beach Resort (Ocean Escape)", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 126, "ControlName": null, "Shortcode": "Kauai Beach Villas", "Code": "Kauai Beach Villas", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 127, "ControlName": null, "Shortcode": "Kauai Coast Resort At The Beach", "Code": "Kauai Coast Resort At The Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 128, "ControlName": null, "Shortcode": "Kauai Inn", "Code": "Kauai Inn", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 129, "ControlName": null, "Shortcode": "Kauai Lagoons Marriott", "Code": "Kauai Lagoons Marriott", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 130, "ControlName": null, "Shortcode": "Kauai Marriott Resort", "Code": "Kauai Marriott Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 131, "ControlName": null, "Shortcode": "Kauai Marriott Resort & Beach Club", "Code": "Kauai Marriott Resort & Beach Club", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 132, "ControlName": null, "Shortcode": "Kauai Sands Hotel", "Code": "Kauai Sands Hotel", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 133, "ControlName": null, "Shortcode": "Kauai Shores", "Code": "Kauai Shores", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 134, "ControlName": null, "Shortcode": "Kauhale Makai Condos", "Code": "Kauhale Makai Condos", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 135, "ControlName": null, "Shortcode": "Kiahuna Plantation & The Beach", "Code": "Kiahuna Plantation & The Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 136, "ControlName": null, "Shortcode": "Koa Kea Resort", "Code": "Koa Kea Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 137, "ControlName": null, "Shortcode": "Koloa Landing At Poipu Beach Wyndham Grand Resort", "Code": "Koloa Landing At Poipu Beach Wyndham Grand Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 138, "ControlName": null, "Shortcode": "Kuhio Shore Condominiums", "Code": "Kuhio Shore Condominiums", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 139, "ControlName": null, "Shortcode": "Lanikai Resort", "Code": "Lanikai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 140, "ControlName": null, "Shortcode": "Lawai Beach Resort", "Code": "Lawai Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 141, "ControlName": null, "Shortcode": "Makahuena at Poipu", "Code": "Makahuena at Poipu", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 142, "ControlName": null, "Shortcode": "Marriott Waiohai Beach Club", "Code": "Marriott Waiohai Beach Club", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 143, "ControlName": null, "Shortcode": "Mokihana Of Kauai", "Code": "Mokihana Of Kauai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 144, "ControlName": null, "Shortcode": "Other", "Code": "Other", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 145, "ControlName": null, "Shortcode": "Plantation Hale Suites", "Code": "Plantation Hale Suites", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 146, "ControlName": null, "Shortcode": "Poipu Kapili", "Code": "Poipu Kapili", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 147, "ControlName": null, "Shortcode": "Poipu Shores", "Code": "Poipu Shores", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 148, "ControlName": null, "Shortcode": "Pono Kai Resort", "Code": "Pono Kai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 149, "ControlName": null, "Shortcode": "Prince Kuhio Resort", "Code": "Prince Kuhio Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 150, "ControlName": null, "Shortcode": "Puu Poa", "Code": "Puu Poa", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 151, "ControlName": null, "Shortcode": "Royal Sonesta Kauai Resort", "Code": "Royal Sonesta Kauai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 152, "ControlName": null, "Shortcode": "Sheraton Kauai Coconut Beach", "Code": "Sheraton Kauai Coconut Beach", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 153, "ControlName": null, "Shortcode": "Sheraton Kauai Resort", "Code": "Sheraton Kauai Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 154, "ControlName": null, "Shortcode": "St. Regis Princeville Resort", "Code": "St. Regis Princeville Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 155, "ControlName": null, "Shortcode": "Sunset Kahili Condominium", "Code": "Sunset Kahili Condominium", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 156, "ControlName": null, "Shortcode": "The Point At Poipu", "Code": "The Point At Poipu", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 157, "ControlName": null, "Shortcode": "Wailua Bay View Condominiums", "Code": "Wailua Bay View Condominiums", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 158, "ControlName": null, "Shortcode": "Waimea Plantation Cottages", "Code": "Waimea Plantation Cottages", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 159, "ControlName": null, "Shortcode": "Waipouli Beach Resort", "Code": "Waipouli Beach Resort", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 160, "ControlName": null, "Shortcode": "Westin Princeville Ocean Resort Villas", "Code": "Westin Princeville Ocean Resort Villas", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 161, "ControlName": null, "Shortcode": "Wyndham Ka 'Eo Kai", "Code": "Wyndham Ka 'Eo Kai", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 162, "ControlName": null, "Shortcode": "Wyndham Makai Club", "Code": "Wyndham Makai Club", "Selected": false, "Value": "", "ListMembers": [] }, { "ID": 163, "ControlName": null, "Shortcode": "Wyndham Shearwater", "Code": "Wyndham Shearwater", "Selected": false, "Value": "", "ListMembers": [] }] }, "Name": "Select Your Kauai Hotel", "DisplayOrder": 0, "DisplayAlias": null, "Value": null, "Required": false }], "Schedules": [{ "ControlName": "schedule_KauaiBackcountryTubingAdventure_127", "ID": 0, "DisplayOrder": 0, "Key": null, "ScheduleSelections": [{ "ID": 45, "Timeslot": "-- Select --", "Limit": -1, "Selected": false }, { "ID": 46, "Timeslot": "Any Available Time", "Limit": -1, "Selected": false }, { "ID": 47, "Timeslot": "Morning", "Limit": -1, "Selected": false }, { "ID": 48, "Timeslot": "Mid-Day", "Limit": -1, "Selected": false }, { "ID": 49, "Timeslot": "Afternoon", "Limit": -1, "Selected": false }], "Groupname": "Kauai Backcountry - Tubing Adventure", "Limit": 0, "Availability": { "CollectorName": "", "ReferenceControl": "ActivityDate_127", "ClosedDates": null, "Cutoff": null } }], "Groupings": [], "Customer": { "Email": "", "MobilePhone": "" } };
+    </script>
+
+
+    <form id="addToCartForm" method="post">
+      <input type="hidden" name="cart" value="True" />
+      <div id="reservation-window"></div>
+    </form>
+
+    <script>
+      window.onload = function () {
+        document.getElementById("addToCartForm").setAttribute("action", "/products/details/" + cartData.ProductID + "");
+      };
+    </script>
+
+    <script src="js/momentJS/moment.js"></script>
+    <script src="js/momentJS/moment-timezone.js"></script>
+    <script src="js/reservation-template.js"></script>
+    <script src="js/reservation-config.js"></script>
+    <script src="js/reservation-theme.js"></script>
+    <!-- ======== -->
+
+    <!-- ======================================================= -->
+    <div id="why-book-with">
+      <h2>why book with us?</h2>
+      <ul>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:0;top:0;">
+            </div>
+            <header>Secure Shopping</header>
+            <p>Safe, secure online booking system with validated privacy protection.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-11em;top:0;">
+            </div>
+            <header>Advance Booking<br />Satisfaction</header>
+            <p>Avoid sellouts and price increases. Relax knowing your luau tickets are reserved and guaranteed.</p>
+          </div>
+        </li>
+        <li>
+          <div class="booking-details">
+            <div class="booking-img-container">
+              <img src="images/guarantee-icons.png" alt="" style="left:-16.5em;top:0;">
+            </div>
+            <header>Friendly Support</header>
+            <p>Our staff will answer any questions you may have and ensure 100% satisfaction.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- ================================== -->
+
+    <footer class="footer">
+
+      <a href="#" id="logo-footer">
+        <b>kauai tubing</b><br><span>discount tubing adventures</span>
+      </a>
+
+      <div class="social">
+        <p>follow us</p>
+        <ul>
+          <li><a href=""><img src="images/youtube.svg" alt=""></a></li>
+          <li><a href=""><img src="images/facebook.svg" alt=""></a></li>
+          <li><a href=""><img src="images/instagram.svg" alt=""></a></li>
+          <li><a href=""><img src="images/twitter.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <section>
+        <ul>
+          <li><b>navigation</b></li>
+          <li> <a href="reservations.htm">reservations</a></li>
+          <li> <a href="#">home</a> </li>
+          <li> <a href="#">contact</a> </li>
+          <li> <a href="#">about us</a> </li>
+          <li> <a href="#">cart</a> </li>
+        </ul>
+        <ul>
+          <li><b>site info</b></li>
+          <li> <a href="#">faq</a> </li>
+          <li> <a href="#">site map</a> </li>
+          <li> <a href="#">privacy policy</a> </li>
+          <li> <a href="#">terms</a> </li>
+          <li> <a href="#">login</a> </li>
+        </ul>
+      </section>
+      <p>Copyright (c) 2024 hawaii discount All Rights Reserved.</p>
+    </footer>
+
+  </main>
+
+  <!-- =================================== -->
+
+</body>
+
+</html>
